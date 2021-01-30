@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "PromoCode",
             dependencies: [
-                .product(name: "FeatherCore", package: "featehr-core")],
+                .product(name: "FeatherCore", package: "feather-core")],
             resources: [
                 .copy("Bundle/")
             ]),
