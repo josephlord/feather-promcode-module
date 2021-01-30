@@ -7,5 +7,5 @@ This is very lightly tested and only just being deployed for the first time on 3
 ## Installation
 
 1) Fork Feather CMS
-2) Add this package to the dependencies.
-3) Add the module into the 
+2) Add this package to the dependencies in the Package.swift file.
+3) Run the builder in the /Sources
