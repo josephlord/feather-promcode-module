@@ -1,0 +1,11 @@
+#let(delete = [
+    "id": formId,
+    "token": formToken,
+    "context": model.title,
+    "type": "post",
+    "list": [
+        "title": "Offers",
+        "url": "/admin/promo/offers/"
+    ]
+])
+#inline("Admin/Delete")

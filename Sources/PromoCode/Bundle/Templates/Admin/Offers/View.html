@@ -1,0 +1,29 @@
+#let(detail = [
+    "title": "Offer",
+    "key": "promo.offers",
+    "list": [
+        "title": "Offers",
+        "url": "/admin/promo/offers/"
+    ]
+])
+#define(details):
+    <dl class="t:center">
+        <dt>Id</dt>
+        <dd class="m:h:zero m:b">#(model.id)</dd>
+
+        
+        <dt>Name</dt>
+        <dd class="m:h:zero m:b">#(model.name)</dd>
+
+        <dt>Description</dt>
+        <dd class="m:h:zero m:b">#(model.description)</dd>
+
+        <dt>Expiry</dt>
+        <dd class="m:h:zero m:b">#Date(timeStamp: model.expiry, fixedFormat: $app.dateFormats.date, timeZone: $app.timezone)</dd>
+        
+        <dt>Available Code Count</dt>
+        <dd class="m:h:zero m:b">#(model.availableCodes)</dd>
+
+    </dl>
+#enddefine
+#inline("Admin/Detail")
